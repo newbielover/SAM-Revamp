@@ -1,0 +1,207 @@
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #878787;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {  
+  font-size: 3.825rem; /* 90px/16px  */
+  color: #EEEAEA;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3; 
+  text-shadow: 0 1px 1px rgba(0,0,0,.8);
+}
+
+h2 {
+  font-size: 3.3125em; /* 53px/16px  */
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 0 0 .5em; /* 0 0 26px */
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.25em; /* 20px/16px  */
+  color: #EEEAEA;
+  line-height: 1.2;
+  margin-bottom: 1.7em; /* 34px */
+}
+
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+ul,
+ol {
+  margin: 30px 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+#navigationBar li { 
+display: inline; 
+padding: 20px;
+
+}
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: rgb(255, 169, 73);
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightblue;
+}
+
+a:hover {
+  color: rgba(255, 169, 73, .4);
+}
+
+a:active {
+  color: lightcoral;
+}
+
+/* Main Styles --------------------- */
+
+.main-header {
+  padding-top: 60px;
+  height: 400px;
+  background: url('../img/duke.jpg') no-repeat center;
+  background-size: cover;
+}
+
+
+
+.title {
+  color: white;
+  font-size: 1.225rem; /* 26px/16px */
+}
+
+.intro {
+  font-size: 1.25em; /* 20px/16px */
+  line-height: 1.6;  
+}
+
+.navBar {
+  text-align: center;
+}
+
+.primary-content,
+.main-header,
+.main-footer {
+  text-align: center;
+}
+
+.primary-content {
+	padding-top: 25px;
+  padding-bottom: 95px;
+}
+
+.secondary-content {
+	padding-top: 80px;
+	padding-bottom: 70px;
+  border-bottom: 2px solid #dfe2e6;
+}
+
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 10px solid #ffa949;
+}
+
+.t-border {
+  border-top: 2px solid #dfe2e6;
+}
+
+/* Layout Styles ------------------ */
+
+.primary-content, 
+.secondary-content {
+  width: 75%;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: auto;
+  max-width: 960px;
+}
+
+.approach {
+  color: #878787;
+}
+
+.whySAM {
+  color: white;
+  text-align: left;
+  padding: 18% 10%;
+  margin: 85px 0 60px;
+  background: #434a52 url('../img/bbull.jpg') no-repeat center;
+  background-size: cover;
+  box-shadow: inset 0 0 50px 10px rgba(0,0,0, .8);
+  border-radius: 10px;
+  vertical-align:top;
+}
+.strategy {
+  color: black;
+  text-align: left;
+  padding: 2% 10%;
+  margin: 25px 0 60px;
+  vertical-align:top;
+}
+
+.equity {
+  color: black;
+  padding: 10px 10px;
+  background: linear-gradient(135deg, orange, white);
+}
+
+.fixedInc {
+  color: black;
+  padding: 10px 10px;
+  background: linear-gradient(135deg, orange, white);
+}
+.arrow {
+  width: 50px;
+  margin-bottom: 150px;
+}
+
+/* Floated Columns ------------------ */
+
+.resorts,
+.tips {
+  width: 46.5%;
+}
+
+.tips {
+  float: left;
+}
+
+.resorts {
+  float: right;
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
